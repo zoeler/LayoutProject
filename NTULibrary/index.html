@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTU Library</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- --------最頂列-------- -->
+        <div class="container-fluid d-none d-sm-block" style="background-color: #A04B48;">
+            <div class="container">
+                <nav class="topLink">
+                    <ul class="mb-0">
+                        <li><a href="#" class="text-decoration-none">臺大首頁</a></li>
+                        <li><a href="#" class="text-decoration-none">行事曆</a></li>
+                        <li><a href="#" class="text-decoration-none">常問問題</a></li>
+                        <li><a href="#" class="text-decoration-none">聯絡我們</a></li>
+                        <li><a href="#" class="text-decoration-none">意見回饋</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- --------Banner-------- -->
+        <div class="hero container-fluid">
+            <div class="container">
+                <div class="row hero-top">
+                    <div class="lib-pic">
+                        <a href="https://www.lib.ntu.edu.tw/" target="_blank"><img src="images/NTUlibrary-01_0_0.png"
+                                alt="台大圖書館" title="回首頁"></a>
+                    </div>
+                    <p class="menu d-flex d-sm-none">Menu</p>
+                    <ul class="d-none d-sm-flex">
+                        <li>繁體中文</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+                <div class="herobox d-none d-sm-block"></div>
+                <nav class="hero-nav px-0 d-none d-sm-block">
+                    <ul class="px-0">
+                        <li><a href="#" class="text-decoration-none">研究資源</a></li>
+                        <li><a href="#" class="text-decoration-none">參考諮詢</a></li>
+                        <li><a href="#" class="text-decoration-none">服務項目</a></li>
+                        <li><a href="#" class="text-decoration-none">關於本館</a></li>
+                        <li><a href="#" class="text-decoration-none" style="color:rgb(239, 129, 88);">常用服務</a></li>
+                        <li><a href="#" class="text-decoration-none">線上捐款</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- --------館藏目錄-------- -->
+        <div class="container-fluid search_bg">
+            <div class="container">
+                <div class="search-tag">
+                    <ul>
+                        <li style="background-color: #e96656; color: #fff;">館藏目錄</li>
+                        <li>整合查詢</li>
+                        <li class="d-none d-sm-block">資料庫</li>
+                        <li class="d-none d-sm-block">特藏資源</li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <div>
+                        <div class="s1 d-none d-sm-block">
+                            <a>雲端圖書館自動化系統</a>
+                            <span style="color:#fff">可查詢本館館藏(含圖書期刊、電子資源、影音資料等各類資料)。</span>
+                        </div>
+                        <div class="s2">
+                            <form>
+                                <select name="" id="" class="d-none d-sm-block">
+                                    <option>不限欄位</option>
+                                    <option>書刊名</option>
+                                    <option>作者</option>
+                                </select>
+                                <input type="text" name="search" placeholder="請輸入關鍵字">
+                            </form>
+                            <div class="search-icon">
+                                <div class="iconwrap">
+                                    <img src="./images/almaSearch_icon-01.png" class="d-none d-sm-block">
+                                    <p class="d-block d-sm-none" style="color:#fff">查詢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s3">
+                            <a href="#" class="d-none d-sm-inline">進階查詢</a>
+                            <a href="#" class="d-none d-sm-inline">查詢個人借閱紀錄</a>
+                            <span class="d-inline d-sm-none">新</span>
+                            <a href="#" class="d-inline d-sm-none">個人借閱紀錄</a>
+                            <a href="#">使用說明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------開館資訊三格-------- -->
+        <div class="container-fluid date-bg">
+            <div class="container">
+                <div class="row date row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col date">
+                        <div class="datebox">
+                            <div class="left datecard">
+                                <p>11月</p>
+                                <p>1</p>
+                            </div>
+                            <div class="right">
+                                <p>學期中</p>
+                                <p style="color:#006699;">2022/9/5-2022/12/25</p>
+                                <p class="open" style="color:brown;">今日開館：</p>
+                                <div class="button"><a href="#">詳細開館時間</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col date">
+                        <div class="datebox">
+                            <div class="left">
+                                <img src="./images/icon_GA-01.png">
+                            </div>
+                            <div class="right num">
+                                <p>自習室空位：</p>
+                                <p>總圖在館人數：</p>
+                                <p>站上人數：</p>
+                                <div class="button"><a href="#">其他數據</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col date">
+                        <div class="datebox">
+                            <div class="left">
+                                <img src="./images/APP-ICON-1024.png">
+                            </div>
+                            <div class="right">
+                                <p>圖書館APP</p>
+                                <div class="code">
+                                    <img src="./images/QR_android.png">
+                                </div>
+                                <div class="code">
+                                    <img src="./images/QR_ios.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- --------最新消息-------- -->
+        <div class="container-fluid info-bg">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                    <div class="col infoimg">
+                        <div id="infoimgslide" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#infoimgslide" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#infoimgslide" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#infoimgslide" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#infoimgslide" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active infoimgwarp">
+                                    <img src="./images/slide_0.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item infoimgwarp">
+                                    <img src="./images/slide_1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item infoimgwarp">
+                                    <img src="./images/slide_2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item infoimgwarp">
+                                    <img src="./images/slide_3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#infoimgslide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#infoimgslide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="infoimgmore button"><a href="#">更多活動</a></div>
+                    </div>
+                    <div class="col news">
+                        <table class="news">
+                            <caption>最新消息</caption>
+                            <tr class="d-none d-sm-table-row">
+                                <td>
+                                    [公告] 9/29(四)起總圖一樓閱覽區封閉, 流通櫃臺將改至二樓服務</td>
+                                <td>2022-09-22</td>
+                            </tr>
+                            <tr class="d-none d-sm-table-row">
+                                <td>[公告]【廠商活動】學術傳播面面觀-Emerald 2022有獎徵答</td>
+                                <td>2022-10-29</td>
+                            </tr>
+                            <tr>
+                                <td class="noline">新增資料庫New Database: Korean studies Information Service System
+                                    (KISS)、DBpia & KRpia
+                                    (Korean)</td>
+                                <td class="d-none d-sm-table-cell">2022-10-27</td>
+                            </tr>
+                            <tr class="d-table-row d-sm-none">
+                                <td style="color:#b29c94">2022-10-27</td>
+                            </tr>
+                            <tr>
+                                <td class="noline">[公告] 11/2 (三)多媒體服務中心閉館進行設備維護</td>
+                                <td class="d-none d-sm-table-cell">2022-10-27</td>
+                            </tr>
+                            <tr class="d-table-row d-sm-none">
+                                <td style="color:#b29c94">2022-10-27</td>
+                            </tr>
+                            <tr>
+                                <td class="noline">[公告] 臺大圖書館10/26(三)推出全新電子學位論文上傳服務</td>
+                                <td class="d-none d-sm-table-cell">2022-10-27</td>
+                            </tr>
+                            <tr class="d-table-row d-sm-none">
+                                <td style="color:#b29c94">2022-10-27</td>
+                            </tr>
+                            <tr class="more">
+                                <td colspan="2" class="more">
+                                    <span class="button d-none d-sm-inline"><a href="#">更多消息</a></span>
+                                </td>
+                            </tr>
+                            <tr class="d-table-row d-sm-none">
+                                <td class="noline text-center py-3">閱讀更多消息 ></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------熱門館藏-------- -->
+        <div class="container-fluid book-bg">
+            <div class="container">
+                <div class="row">
+                    <h4 class="d-none d-sm-block">熱門新進館藏</h4>
+                    <h4 class="d-block d-sm-none">熱門館藏</h4>
+                </div>
+                <div class="row seemore d-none d-sm-flex">
+                    <a href="#">查看更多</a>
+                </div>
+                <div class="row d-none d-sm-flex">
+                    <div id="bookslide" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="books">
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_1.jpg" />
+                                        </div>
+                                        <p class="bookname">彼岸花盛開之島</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_2.jpg" />
+                                        </div>
+                                        <p class="bookname">陪審員</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_3.jpg" />
+                                        </div>
+                                        <p class="bookname">1Q84</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_4.jpg" />
+                                        </div>
+                                        <p class="bookname">你好, 這裡是記憶花店</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="books">
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_5.jpg" />
+                                        </div>
+                                        <p class="bookname">007 生死交戰</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_6.jpg" />
+                                        </div>
+                                        <p class="bookname">失控謊言</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_7.jpg" />
+                                        </div>
+                                        <p class="bookname">沙丘</p>
+                                    </div>
+                                    <div class="bookbox">
+                                        <div class="bookcover">
+                                            <img src="./images/book_8.jpg" />
+                                        </div>
+                                        <p class="bookname">危城</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bookslide"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bookslide"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-100 overflow-hidden d-block d-sm-none">
+                    <div class="booksrow">
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_1.jpg" />
+                            </div>
+                            <p class="bookname">彼岸花盛開之島</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_2.jpg" />
+                            </div>
+                            <p class="bookname">陪審員</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_3.jpg" />
+                            </div>
+                            <p class="bookname">1Q84</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_4.jpg" />
+                            </div>
+                            <p class="bookname">你好, 這裡是記憶花店</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_5.jpg" />
+                            </div>
+                            <p class="bookname">007 生死交戰</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_6.jpg" />
+                            </div>
+                            <p class="bookname">失控謊言</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_7.jpg" />
+                            </div>
+                            <p class="bookname">沙丘</p>
+                        </div>
+                        <div class="bookbox">
+                            <div class="bookcover">
+                                <img src="./images/book_8.jpg" />
+                            </div>
+                            <p class="bookname">危城</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------其他分館-------- -->
+        <div class="container-fluid libs-bg">
+            <div class="container">
+                <h4>各館</h4>
+                <div class="row libs d-none d-sm-flex">
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://ntuml.mc.ntu.edu.tw/Index.action" target="_blank">前往網站</a>
+                                <p>主要服務對象為本校醫學院、公衛學院之教職員工生及臺大醫院之醫護人員，同時亦開放給校外讀者使用。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_0.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">醫學圖書館</a>
+                            <div class="libbottom" style="border-top: 2px solid #E96656">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-23123456#262207</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://web.lib.ntu.edu.tw/koolib/" target="_blank">前往網站</a>
+                                <p>主要服務對象為本校社會科學院之教職員工生，同時亦開放給校外讀者使用。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_1.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">社科院圖書館</a>
+                            <div class="libbottom " style="border-top: 2px solid #34D293">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-33668300#55600</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://www.lib.ntu.edu.tw/asrs" target="_blank">前往網站</a>
+                                <p>國內首座高密度自動化書庫，能增加120萬冊以上，達傳統書架可容納之五倍典藏量。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_2.jpg">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">自動化書庫服務中心</a>
+                            <div class="libbottom" style="border-top: 2px solid #3AB0E2">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-33669836</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="http://homepage.ntu.edu.tw/~ntukoolib/Default.html" target="_blank">前往網站</a>
+                                <p>主要服務對象為本校法律學院之教職員工生，同時亦開放給校外讀者使用。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_3.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">法律學院圖書館</a>
+                            <div class="libbottom" style="border-top: 2px solid #F7D861">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-33663366#55230</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://www.lib.ntu.edu.tw/gallery/home.htm" target="_blank">前往網站</a>
+                                <p>校史館常設展區位於舊總圖書館二樓中央閱覽廳，為臺北市政府指定為市定古蹟保護。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_4.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">校史館</a>
+                            <div class="libbottom" style="border-top: 2px solid #E96656">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-33663818</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://www.lib.ntu.edu.tw/node/2827" target="_blank">前往網站</a>
+                                <p>含圖資系、物理系、化學系、數學系、海洋所及其他圖書室分布圖。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_5.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">各學系圖書室</a>
+                            <div class="libbottom" style="border-top: 2px solid #34D293">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="libbox">
+                            <div class="blackbox">
+                                <a href="https://tiprc.cip.gov.tw/#gsc.tab=0" target="_blank">前往網站</a>
+                                <p>臺灣原住民族圖書資訊中心以完整蒐集原住民族相關實體資料為主,提供閱覽使用。</p>
+                            </div>
+                            <div class="circle">
+                                <img src="./images/lib_6.png">
+                            </div>
+                            <a class="fw-bold text-decoration-none text-black mb-1">原住民族圖資中心</a>
+                            <div class="libbottom" style="border-top: 2px solid #3AB0E2">
+                                <a>交通位置</a>
+                                <a>開館時間</a>
+                                <p>電話 02-33663776</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-sm-none">
+                    <ul class="liblist list-unstyled ms-4">
+                        <li>+醫學圖書館</li>
+                        <li>+社會科學院圖書館</li>
+                        <li>+自動化書庫服務中心</li>
+                        <li>+法律學院圖書館</li>
+                        <li>+校史館</li>
+                        <li>+各學系圖書室</li>
+                        <li>+原民圖書資訊中心</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- --------常用連結-------- -->
+        <div class="container-fluid link-bg">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col pb-3 pb-sm-0">
+                        <div class="linkbox link1">
+                            <h2>研究資源</h2>
+                            <a href="#">整合查詢</a>
+                            <a href="#">館藏目錄</a>
+                            <a href="#">國內圖書館整合查詢 MetaCat</a>
+                            <a href="#">電子期刊</a>
+                            <a href="#">資料庫</a>
+                            <a href="#">電子書</a>
+                            <a href="#">考古題</a>
+                            <a href="#">特藏資源</a>
+                        </div>
+                    </div>
+                    <div class="col pb-3 pb-sm-0">
+                        <div class="linkbox link2">
+                            <h2>參考諮詢</h2>
+                            <a href="#">聯絡學科館員</a>
+                            <a href="#">加入臺大學術典藏</a>
+                            <a href="#">資料查詢指引</a>
+                            <a href="#">圖書館利用講習</a>
+                            <a href="#">參考服務部落格</a>
+                            <a href="#">常問問題</a>
+                        </div>
+                    </div>
+                    <div class="col pb-3 pb-sm-0">
+                        <div class="linkbox link3">
+                            <h2>服務項目</h2>
+                            <a href="#">開放時間</a>
+                            <a href="#">入館須知</a>
+                            <a href="#">個人借閱紀錄</a>
+                            <a href="#">借還書規則</a>
+                            <a href="#">校外連線說明(VPN)</a>
+                            <a href="#">筆記型電腦及上網(Wi-Fi)</a>
+                            <a href="#">論文繳交及離校手續事項</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="linkbox link4">
+                            <h2>館於本館</h2>
+                            <a href="#">樓層配置</a>
+                            <a href="#">交通位置</a>
+                            <a href="#">出版品</a>
+                            <a href="#">紀念品</a>
+                            <a href="#">圖書館徵才</a>
+                            <a href="#">校友小額捐款</a>
+                            <a href="#">意見箱</a>
+                            <a href="#">訂閱電子報</a>
+                            <a href="#">館員專區</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid foot-bg">
+            <div class="container">
+                <div class="row icons justify-content-center">
+                    <div class="iconbox fb">
+                    </div>
+                    <div class="iconbox ig">
+                    </div>
+                    <div class="iconbox line">
+                    </div>
+                    <div class=" iconbox yt">
+                    </div>
+                    <div class="iconbox rs">
+                    </div>
+                </div>
+                <div class="row w-100 ad flex-column flex-sm-row col-1 col-sm-3">
+                    <div class="col adbox">
+                        <span>借還書服務：02-33662353<a href="#" class="d-none d-sm-inline">tulcir@ntu.edu.tw</a></span>
+                    </div>
+                    <div class="col adbox">
+                        <span>參考諮詢：02-33662326<a href="#" class="d-none d-sm-inline">tulcir@ntu.edu.tw</a></span>
+                    </div>
+                    <div class="col adbox d-flex d-sm-none">
+                        <a href="#" class="p-0">tulcir@ntu.edu.tw</a>
+                    </div>
+                    <div class="col adbox" style="border:none;">
+                        <span>臺北市10617羅斯福路四段一號 國立臺灣大學圖書館</span>
+                    </div>
+                </div>
+                <div class="state">
+                    <a href="#">本站聲明</a>
+                    <span>本網站最佳瀏覽器為Chrome,Mozilla FireFox及IE9以上版本</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

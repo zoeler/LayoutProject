@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂吃購RWD</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="topTop" class="container-fluid d-none d-md-block">
+            <div class="container px-0">
+                <ul class="d-flex justify-content-between gap-4 py-2">
+                    <li><a href="#">旅遊指南</a></li>
+                    <li><a href="#">訂房比價</a></li>
+                    <li><a href="#">機票比價</a></li>
+                    <li><a href="#">行程體驗</a></li>
+                    <li><a href="#">租車預約</a></li>
+                    <li><a href="#">MiCHi SHOP</a></li>
+                    <li><a href="#">蝦皮賣場</a></li>
+                    <li class="flex-grow-1"><a href="#">吉田部落格</a></li>
+                    <li class="d-flex gap-2"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;"
+                                fill="#3b5998" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                            </svg></a>
+                        <a href="#"><img src="./images/Instagram.svg.webp" alt="ig" style="width:20px"></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" fill="red"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+                                </path>
+                            </svg></a>
+                    </li>
+                    <li>你好,客人</li>
+                </ul>
+            </div>
+        </div>
+        <div id="topCenter" class="container-fluid d-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center py-4">
+                    <div class="col col-auto">
+                        <img src="./images/www_logo.png" alt="">
+                    </div>
+                    <div id="place" class="col col-auto flex-grow-1 d-flex justify-content-start gap-2">
+                        <div><a href="#" style="color:#fff;">首頁</a></div>
+                        <div><a href="#">北海道</a></div>
+                        <div><a href="#">東北</a></div>
+                        <div><a href="#">東京</a></div>
+                        <div><a href="#">北陸</a></div>
+                        <div><a href="#">中部</a></div>
+                        <div><a href="#">關西</a></div>
+                        <div><a href="#">山陽</a><a href="#">山陰</a></div>
+                        <div><a href="#">四國</a></div>
+                        <div><a href="#">九州</a></div>
+                        <div><a href="#">沖繩</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="topBottom" class="container-fluid d-none d-md-block">
+            <div class="container">
+                <div class="row flex-nowrap align-items-center justify-content-between">
+                    <nav class="col py-2 px-0 col-auto">
+                        <ul class="d-flex">
+                            <li style="border-right:1px solid #fff"><a href="#">優惠券</a></li>
+                            <li><a href="#">樂</a></li>
+                            <li><a href="#">吃</a></li>
+                            <li><a href="#">購</a></li>
+                            <li><a href="#">住</a></li>
+                            <li><a href="#">行程</a></li>
+                            <li><a href="#">交通</a></li>
+                            <li><a href="#">基本資訊</a></li>
+                            <li><a href="#">選物</a></li>
+                            <li><a href="#">旅遊日記</a></li>
+                            <li><a href="#">活動日曆</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="searchBg" class="col col-auto d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass" style="color:#fff; font-size:20px"></i>
+                        <form>
+                            <input type="text" placeholder="搜尋">
+                        </form>
+                    </div>
+
+                    <span class="col col-auto" style="color:#fff;">繁體中文</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- 手機板 -->
+        <div class="flex-nowrap d-flex d-md-none justify-content-between" style="background-color: #d10A1c;">
+            <div class="col-auto align-self-end px-2 pb-2">
+                <img src="./images/sp_menu_icon.png" style="width: 60%;display: block;margin: auto;">
+            </div>
+            <div class="col-auto d-flex justify-content-center align-items-center py-2 flex-grow-1"
+                style="border-left: 1px solid #000;border-right: 1px solid #000;">
+                <img src="./images/www_logo_sp.png" style="width:60%">
+            </div>
+            <div class="col-auto align-self-end px-2 pb-2">
+                <img src="./images/sp_search_icon.png" style="width:60%;display: block;margin: auto;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container p-0">
+            <div class="row flex-column flex-md-row m-0">
+                <!-- --------主欄-------- -->
+                <section class="col-12 col-md-9 d-flex flex-column p-0">
+                    <div class="px-0 py-3 d-none d-md-block" style="border-bottom:1px solid  lightgrey;">
+                        <div class="w-100">
+                            <a href="#"><img src="./images/welcome825x140.jpg" alt="" class="w-100 h-100"
+                                    style="object-fit: cover;"></a>
+                        </div>
+                    </div>
+                    <!-- --------最新消息-------- -->
+                    <div id="news" class="row pt-3 align-items-center mx-0 d-none d-md-flex">
+                        <div class="p-0 col-5">
+                            <div class="newsPic"></div>
+                        </div>
+                        <div class="d-flex flex-column gap-2 col-7">
+                            <div class="row flex-nowrap align-items-center w-100">
+                                <p class="col-auto catagory">樂</p>
+                                <p class="col-auto newstitle"><a href="#">灰原哀陷入大危機！？《名偵探柯南》最新劇場版2023年黃金週上映</a></p>
+                            </div>
+                            <div class="row flex-nowrap align-items-center w-100">
+                                <p class="col-auto catagory">樂</p>
+                                <p class="col-auto newstitle"><a href="#">韋禮安也登上「THE FIRST
+                                        TAKE」！日本最強YouTube音樂頻道為什麼超人氣？</a>
+                                </p>
+                            </div>
+                            <div class="row flex-nowrap align-items-center w-100">
+                                <p class="col-auto catagory">樂</p>
+                                <p class="col-auto newstitle"><a href="#">冒險家「瀧澤秀明」不靠顏值靠實力！從偶像當到副社長，一路寫奇蹟</a></p>
+                            </div>
+                            <div class="row flex-nowrap align-items-center w-100">
+                                <p class="col-auto catagory">交通</p>
+                                <p class="col-auto newstitle"><a href="#">日本搭機入境日語教學：海關、入境記錄卡、Visit Japan
+                                        Web、出關步驟一次搞懂</a>
+                                </p>
+                            </div>
+                            <div class="row flex-nowrap align-items-center w-100">
+                                <p class="col-auto catagory">樂</p>
+                                <p class="col-auto newstitle"><a href="#">松本潤2023年主演NHK大河劇《怎麼辦家康》德川家康！松嶋菜菜子加入演出</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end morenews pb-3 d-none d-md-flex">
+                        <button class="btn btn-dark">看更多</button>
+                    </div>
+                    <!-- --------廣告三小欄-------- -->
+                    <div id="three"
+                        class="row flex-column flex-md-row w-100 justify-content-between m-0 pb-3 pt-0 pt-md-3 gap-4">
+                        <div class="col px-0">
+                            <img src="./images/co_tsb_2022jptravelplan.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="col px-0 d-none d-md-block">
+                            <img src="./images/co_tsb_2022topanimate.jpg" alt="" class="w-100">
+                        </div>
+
+                        <div class="col px-0 d-none d-md-block">
+                            <img src="./images/co_tsb_2022topdrama.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <!-- 手機板選單 -->
+                    <div class="d-block d-md-none mt-3" style="border-bottom:4px solid #d10A1c;">
+                        <ul class="d-flex justify-content-between text-center"
+                            style="background-color: rgb(237, 237, 237);">
+                            <li class="w-25 py-2" style="border-right:2px solid #fff; background-color: #d10A1c;"><a
+                                    href="#" style="color:#fff">主頁</a></li>
+                            <li class="w-25 py-2" style="border-right:2px solid #fff"><a href="#"
+                                    style="color:#000">優惠券</a></li>
+                            <li class="w-25 py-2" style="border-right:2px solid #fff"><a href="#"
+                                    style="color:#000">樂</a></li>
+                            <li class="w-25 py-2"><a href="#" style="color:#000">吃</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- --------編輯部推薦-------- -->
+                    <div id="recommend" class="pt-3 pb-3 pb-md-0 px-3 px-md-0 order-2 order-md-0">
+                        <h4>編輯部推薦！</h4>
+                        <div class="row flex-column flex-md-row">
+                            <div class="recommend1 col col-12 col-md-6 d-flex gap-2 mb-3">
+                                <div class="flex-shrink-0"></div>
+                                <div class="flex-shrink-0 d-none d-md-block">
+                                    <p class="category">樂</p>
+                                    <p style="font-size: 10px; text-align: center; color:#d10A1c;">東京</p>
+                                </div>
+                                <div class="">
+                                    <p class="m-0" style="font-size: 14px; font-weight: bold;text-align: justify;">
+                                        2022年東京冬季聖誕點燈總整理！丸之內、表參道、惠比壽、六本木燈飾資訊公開！</p>
+                                </div>
+                            </div>
+                            <div class="recommend2 col col-12 col-md-6 d-flex gap-2 mb-3">
+                                <div class="flex-shrink-0"></div>
+                                <div class="flex-shrink-0 d-none d-md-block">
+                                    <p class="category">樂</p>
+                                    <p style="font-size: 10px; text-align: center;color:#d10A1c;">九州</p>
+                                </div>
+                                <div class="">
+                                    <p class="m-0" style="font-size: 14px; font-weight: bold; text-align: justify;">
+                                        宮崎景點+美食推薦：自由行必看高千穗峽、復活島石像，宮崎牛、赤肉蜜瓜都必吃</p>
+                                </div>
+                            </div>
+                            <div class="recommend3 col col-12 col-md-6 d-flex gap-2 mb-3">
+                                <div class="flex-shrink-0"></div>
+                                <div class="flex-shrink-0 d-none d-md-block">
+                                    <p class="category">購</p>
+                                    <p style="font-size: 10px; text-align: center;color:#d10A1c;">九州</p>
+                                </div>
+                                <div class="">
+                                    <p class="m-0" style="font-size: 14px; font-weight: bold;text-align: justify;">
+                                        當伴手禮帶回家！佐賀特產推薦：佐賀牛、草莓、清酒、嬉野茶，這12款美食必買</p>
+                                </div>
+                            </div>
+                            <div class="recommend4 col col-12 col-md-6 d-flex gap-2 mb-3">
+                                <div class="flex-shrink-0"></div>
+                                <div class="flex-shrink-0 d-none d-md-block">
+                                    <p class="category">購</p>
+                                    <p style="font-size: 10px; text-align: center;color:#d10A1c;">九州</p>
+                                </div>
+                                <div class="">
+                                    <p class="m-0" style="font-size: 14px; font-weight: bold;text-align: justify;">
+                                        「長崎縣」伴手禮推薦10選：長崎蛋糕、長崎銘菓CRUZ、九十九島煎餅必買！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-md-dark d-block d-md-none m-auto">看更多</button>
+                    </div>
+                    <!-- --------買好物-------- -->
+                    <div id="buy" class="py-3 order-2 order-md-0 px-3 px-md-0">
+                        <h4>MiCHi SHOP 買好物</h4>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="buypicwrap">
+                                    <img src="./images/michifujiproduct.jpg" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-item-center pt-3">
+                                    <span class="flex-grow-1"
+                                        style="color:#d10A1c; font-size: 20px; font-weight: bolder;text-align: center;">￥2,448～</span>
+                                    <button class="flex-grow-1 btn btn-danger">立即購買</button>
+                                </div>
+                            </div>
+                            <div class="col-4 d-none d-md-block">
+                                <div class="buypicwrap">
+                                    <img src="./images/michihotman2.jpg" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-item-center pt-3">
+                                    <span class="flex-grow-1" style="color:#d10A1c; font-size: 20px; font-weight:
+                                        bolder;text-align: center;">￥3,024～</span>
+                                    <button class="flex-grow-1 btn btn-danger">立即購買</button>
+                                </div>
+                            </div>
+                            <div class="col-4 d-none d-md-block">
+                                <div class="buypicwrap">
+                                    <img src="./images/michifujibiomedi.jpg" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-item-center pt-3">
+                                    <span class="flex-grow-1"
+                                        style="color:#d10A1c; font-size: 20px; font-weight: bolder;text-align: center;">￥5,400～</span>
+                                    <button class="flex-grow-1 btn btn-danger">立即購買</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- --------最新注目情報-------- -->
+                    <div id="info" class="py-3 px-3 px-md-0 order-1 order-md-0">
+                        <h4>最新注目情報！</h4>
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">吃</p>
+                                    <p class="infotitle ms-3">大阪必吃美食一站制霸！心齋橋PARCO「霓虹食堂街」推薦和牛、串炸、章魚燒餐廳全攻略！</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0 "
+                                    style="background: url(./images/parcoccover-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">樂</p>
+                                    <p class="infotitle ms-3">2022大阪・光之饗宴點燈活動必看：御堂筋彩燈、OSAKA 光之文藝復興</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/osakairumi2022hikarinokyoenfb01-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">樂</p>
+                                    <p class="infotitle ms-3">長崎2022新景點自駕行程推薦：吃長崎和牛、「長崎街道海鷗市場」買伴手禮</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/kimono07-1663252111-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">購</p>
+                                    <p class="infotitle ms-3">日本藥妝維他命 B1「合利他命」買哪一種最好？肩頸僵硬、腰痠背痛的人看過來</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/arinamicover-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">吃</p>
+                                    <p class="infotitle ms-3">大阪必吃美食一站制霸！心齋橋PARCO「霓虹食堂街」推薦和牛、串炸、章魚燒餐廳全攻略！</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/parcoccover-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">樂</p>
+                                    <p class="infotitle ms-3">2022大阪・光之饗宴點燈活動必看：御堂筋彩燈、OSAKA 光之文藝復興</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/osakairumi2022hikarinokyoenfb01-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">樂</p>
+                                    <p class="infotitle ms-3">長崎2022新景點自駕行程推薦：吃長崎和牛、「長崎街道海鷗市場」買伴手禮</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/kimono07-1663252111-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3  mb-4 d-flex flex-row flex-md-column">
+                                <div
+                                    class="redline order-2 order-md-0 d-flex align-items-start py-0 pe-0 py-md-3 pe-md-3">
+                                    <p class="category flex-shrink-0 d-none d-md-block" style="width:30px">購</p>
+                                    <p class="infotitle ms-3">日本藥妝維他命 B1「合利他命」買哪一種最好？肩頸僵硬、腰痠背痛的人看過來</p>
+                                </div>
+                                <div class="infoimg order-1 order-md-0"
+                                    style="background: url(./images/arinamicover-255x170.jpg) center center/cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-md-dark d-block m-auto">看更多</button>
+                    </div>
+                    <!-- --------吉田社長 Japan TV-------- -->
+                    <div id="yoshida" class="py-3 px-3 px-md-0 order-2 order-md-0">
+                        <h4>吉田社長 Japan TV</h4>
+                        <div class="row flex-column flex-md-row">
+                            <div class="col col-12 col-md-4 mb-3">
+                                <div class="py-2" style="border-top: 2px solid #d10A1c;">
+                                    <p class="yoshidatitle">
+                                        吉卜力公園2022最完整攻略🔥三大園區搶票方法公開、必看拍照亮點＆必吃餐廳＆必買伴手禮一次解說、宮崎駿吉卜力公園一日遊｜愛知名古屋自由行・日本旅遊4K
+                                        VLOG
+                                    </p>
+                                </div>
+                                <div class="yoimg" style="background: url(./images/hqdefault.jpg) center
+                            center/cover;">
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-4 mb-3 d-none d-md-block">
+                                <div class="py-2" style="border-top: 2px solid #d10A1c;">
+                                    <p class="yoshidatitle">
+                                        貓奴必搭🐱日本最可愛觀光列車！小玉電車開箱、貴志車站、小玉電車博物館號、必吃和歌山拉麵｜和歌山電鐵貴志川線一日遊・日本旅遊4K VLOG
+                                    </p>
+                                </div>
+                                <div class="yoimg" style="background: url(./images/hqdefault\ \(1\).jpg) center
+                            center/cover;">
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-4 mb-3 d-none d-md-block">
+                                <div class="py-2" style="border-top: 2px solid #d10A1c;">
+                                    <p class="yoshidatitle">
+                                        2022日本最新唐吉訶德🔥免稅再送你85折優惠券！日本最大綜合型商店Don Quijote購物攻略｜日本自由行・日本旅遊4K VLOG
+                                    </p>
+                                </div>
+                                <div class="yoimg" style="background: url(./images/hqdefault\ \(2\).jpg) center
+                            center/cover;">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark d-block m-auto">看更多</button>
+                    </div>
+                    <!-- --------精選優惠券-------- -->
+                    <div id="coupon" class="py-3 px-3 px-md-0 order-2 order-md-0">
+                        <h4>精選優惠券</h4>
+                        <div class="row">
+                            <div class="col col-12 col-md-6 d-flex mb-3" style="color:#fff;height: 120px; ">
+                                <div class="cleft w-50 d-flex flex-column justify-content-between align-items-center px-2"
+                                    style="background-color: #d10A1c;height: 100%; position: relative;">
+                                    <span class="mt-2"
+                                        style="width:100%;border: 1px solid #fff;text-align: center; font-size: 10px;">BIC
+                                        CAMERA</span>
+                                    <span>最高可享<span class="bigfive">85折</span></span>
+                                    <span class="mb-2" style=" width:100%;height:18px;background-color: #fff;color:
+                                    #d10A1c;border-radius:9px; text-align: center; font-size:
+                                    10px;">2022年12月31日為止</span>
+                                </div>
+                                <div class="w-50 h-100;">
+                                    <div style="width: 100%;height: 120px; background: url(./images/ricecooker_s.jpg) center
+                                center/cover;"></div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 d-flex mb-3" style="color:#fff;height: 120px; ">
+                                <div class="cleft w-50 d-flex flex-column justify-content-between align-items-center px-2"
+                                    style="background-color: #d10A1c;height: 100%; position: relative;">
+                                    <span class="mt-2"
+                                        style="width:100%;border: 1px solid #fff;text-align: center; font-size: 10px;">多慶屋</span>
+                                    <span>最高可享<span class="bigfive">78折</span></span>
+                                    <span class="mb-2" style=" width:100%;height:18px;background-color: #fff;color:
+                                    #d10A1c;border-radius:9px; text-align: center; font-size:
+                                    10px;">2023年02月28日為止</span>
+                                </div>
+                                <div class="w-50 h-100;">
+                                    <div style="width: 100%;height: 120px; background: url(./images/takeyacover-fbtop.jpg) center
+                                center/cover;"></div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 d-flex mb-3" style="color:#fff;height: 120px; ">
+                                <div class="cleft w-50 d-flex flex-column justify-content-between align-items-center px-2"
+                                    style="background-color: #d10A1c;height: 100%; position: relative;">
+                                    <span class="mt-2"
+                                        style="width:100%;border: 1px solid #fff;text-align: center; font-size: 10px;">唐吉軻德</span>
+                                    <span>最高可享<span class="bigfive">85折</span></span>
+                                    <span class="mb-2" style=" width:100%;height:18px;background-color: #fff;color:
+                                    #d10A1c;border-radius:9px; text-align: center; font-size:
+                                    10px;">無有效日期</span>
+                                </div>
+                                <div class="w-50 h-100;">
+                                    <div style="width: 100%;height: 120px; background: url(./images/donkikabukifbtop-255x170.jpg) center
+                                center/cover;"></div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6 d-flex mb-3" style="color:#fff;height: 120px; ">
+                                <div class="cleft w-50 d-flex flex-column justify-content-between align-items-center px-2"
+                                    style="background-color: #d10A1c;height: 100%; position: relative;">
+                                    <span class="mt-2"
+                                        style="width:100%;border: 1px solid #fff;text-align: center; font-size: 10px;">松本清</span>
+                                    <span>最高可享<span class="bigfive">83折</span></span>
+                                    <span class="mb-2" style=" width:100%;height:18px;background-color: #fff;color:
+                                    #d10A1c;border-radius:9px; text-align: center; font-size:
+                                    10px;">無有效日期</span>
+                                </div>
+                                <div class="w-50 h-100;">
+                                    <div style="width: 100%;height: 120px; background: url(./images/mtkymaininfo08.jpg) center
+                                center/cover;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- --------側欄-------- -->
+                <aside class="col-12 col-md-3">
+                    <!-- --------熱門文章-------- -->
+                    <div class="pb-3 pt-0 py-md-3">
+                        <h5 class="hottitle">熱門文章</h5>
+                        <div class="d-flex">
+                            <div class="hottype w-25"
+                                style="border-left: 1px solid #d10A1c; background-color: #d10A1c;color: #fff;">週間</div>
+                            <div class="hottype w-25">月間</div>
+                            <div class="hottype w-25">累計</div>
+                            <div class="hottype w-25">買好物</div>
+                        </div>
+                        <div class="d-flex flex-column p-2" style="border:1px solid lightgrey; border-top: none;">
+                            <div class="d-flex mb-2">
+                                <div class="num num1 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/1104visitjpweb1-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    2022年11月起日本入境必用「Visit Japan Web」！申請流程與申報教學
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num2 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/neww2842558_m-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    【2023東京自由行】新手必看第一次東京旅遊推薦行程、景點攻略整理
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num3 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/ttyo2-255x170.png);background-size: cover;">
+                                </div>
+                                <p class="p-0  m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    3天2夜東京旅行等你來玩！上傳你的東京美照、分享推薦行程就抽機票住宿
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num4 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/post_main-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    行李超重不用怕！日本郵局寄送國際包裹教學
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num5 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/neww24104196_m-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    【2023大阪自由行】超強行程總整理！難波、梅田、心齋橋、USJ、天王寺必去景點推薦
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num6 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/1104visitjpweb1-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    2022年11月起日本入境必用「Visit Japan Web」！申請流程與申報教學
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num7 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/neww2842558_m-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    【2023東京自由行】新手必看第一次東京旅遊推薦行程、景點攻略整理
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num8 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/ttyo2-255x170.png);background-size: cover;">
+                                </div>
+                                <p class="p-0  m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    3天2夜東京旅行等你來玩！上傳你的東京美照、分享推薦行程就抽機票住宿
+                                </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="num num9 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/post_main-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    行李超重不用怕！日本郵局寄送國際包裹教學
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <div class="num num10 flex-shrink-0 me-2"
+                                    style="width:60px; height:60px; background: url(./images/neww24104196_m-255x170.jpg);background-size: cover;">
+                                </div>
+                                <p class="p-0 m-0"
+                                    style="font-size: 14px;font-weight: bold; line-height: 1;text-align: justify;">
+                                    【2023大阪自由行】超強行程總整理！難波、梅田、心齋橋、USJ、天王寺必去景點推薦
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------訂房比較-------- -->
+                    <div id="room">
+                        <h5 class="fw-bold d-none d-md-block">訂房比較</h5>
+                        <div class="p-2" style="width:100%; background-color:#ffcc00 ;">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size:20px"></i>
+                            <span>搜尋</span>
+                            <form>
+                                <input type="text" placeholder="例如：城市、地區、區或特定飯店、民宿、公寓名稱"
+                                    style="width:100%; border:none; box-shadow: 1px 1px rgb(142, 142, 142) inset; border-radius: 4px;">
+                            </form>
+                            <p class="p-0 m-0">入住日期</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-calendar-days me-1"></i>
+                                <form>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select>
+                                        <option value="">11月'22</option>
+                                        <option value="">12月'22</option>
+                                        <option value="">1月'23</option>
+                                        <option value="">2月'23</option>
+                                        <option value="">3月'23</option>
+                                        <option value="">4月'23</option>
+                                        <option value="">5月'23</option>
+                                        <option value="">6月'23</option>
+                                        <option value="">7月'23</option>
+                                        <option value="">8月'23</option>
+                                        <option value="">9月'23</option>
+                                        <option value="">10月'23</option>
+                                        <option value="">11月'23</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <p class="p-0 m-0">退房日期</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-calendar-days me-1"></i>
+                                <form>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select>
+                                        <option value="">11月'22</option>
+                                        <option value="">12月'22</option>
+                                        <option value="">1月'23</option>
+                                        <option value="">2月'23</option>
+                                        <option value="">3月'23</option>
+                                        <option value="">4月'23</option>
+                                        <option value="">5月'23</option>
+                                        <option value="">6月'23</option>
+                                        <option value="">7月'23</option>
+                                        <option value="">8月'23</option>
+                                        <option value="">9月'23</option>
+                                        <option value="">10月'23</option>
+                                        <option value="">11月'23</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <button class="btn btn-danger btn-sm d-block ms-auto">搜尋</button>
+                        </div>
+
+                    </div>
+                    <!-- --------吉田BLOG-------- -->
+                    <a href="#">
+                        <div class="my-3 yoblog"
+                            style="background: url(./images/yoshida-blog.jpg);background-size: cover;">
+                        </div>
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: #d10A1c;color: #fff;font-size: 14px;">
+        <div class="container py-3 px-3 px-md-0">
+            <div class="row flex-column py-3">
+                <span class="fw-bold">地區</span>
+                <div class="row">
+                    <ul class="d-flex gap-4 ms-3 flex-wrap">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">北海道</a></li>
+                        <li><a href="#">東北</a></li>
+                        <li><a href="#">東京</a></li>
+                        <li><a href="#">北陸</a></li>
+                        <li><a href="#">中部</a></li>
+                        <li><a href="#">關西</a></li>
+                        <li><a href="#">山陽山陰</a></li>
+                        <li><a href="#">四國</a></li>
+                        <li><a href="#">九州</a></li>
+                        <li><a href="#">沖繩</a></li>
+                    </ul>
+
+                </div>
+                <span class="fw-bold mt-3">吉田社長</span>
+                <div class="row">
+                    <ul class="d-flex gap-4 ms-3 flex-wrap">
+                        <li><a href="#">日本人の日本旅遊指南 <svg xmlns="http://www.w3.org/2000/svg" style="height: 1rem;"
+                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a href="#">吉田社長 Japan TV <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.2rem;"
+                                    fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z">
+                                    </path>
+                                </svg></a></li>
+                        <li><a href="#">吉田皓一 <svg xmlns="http://www.w3.org/2000/svg" style="height: 1rem;"
+                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                    </path>
+                                </svg></a></li>
+
+                    </ul>
+                </div>
+                <span class="fw-bold mt-3">樂吃購！日本</span>
+                <div class="d-flex pt-3 ps-4 gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="fw-bold mt-3">MiCHi SHOP</span>
+                <div class="d-flex pt-3 ps-4 gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem;" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="py-3" style="border-top: 1px solid #fff;">
+            <div class="container">
+                <ul class=" d-flex gap-4 flex-column flex-md-row align-items-center">
+                    <li><a href="#">網站營運企業</a></li>
+                    <li><a href="#">聯繫我們</a></li>
+                    <li><a href="#">「樂吃購！日本」使用條款</a></li>
+                    <li><a href="#">隱私權保護政策</a></li>
+                    <li><a href="#">広告出稿をご希望の方はこちら</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="py-3" style="background-color: #ad0816; text-align: center;">
+            Copyright © 2022 吉日媒體集團 All Rights Reserved.
+        </div>
+
+
+
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
